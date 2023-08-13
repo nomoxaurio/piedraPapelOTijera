@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="grid">
+    <header class="header">
+        <div class="chi"><p id="juego">Partidos Jugados: </p></div>
+    </header>
+        
+    <section class="seccion">
+        <h2>Elige una Opcion:</h2>
+        <div>
+            <button class="eleccion" onclick="usuarioElige('PIEDRA')"><img class="piedra" src="/imagen/piedra.png" alt="Piedra" ></button>
+            <button class="eleccion" onclick="usuarioElige('PAPEL')"><img class="papel" src="/imagen/papel.png" alt="Papel"></button>
+            <button class="eleccion" onclick="usuarioElige('TIJERA')"><img class="tijera" src="/imagen/tijera.png" alt="Tijera"></button>
+        </div>
+        <div>
+            <p id="print">Elige una Figura</p><br>
+            <button class="btn" onclick="play ()">JUGAR</button><br>
+        </div>    
+    </section>
+    
+    <section class="contador">
+        <div class="chi"><p id="1">El usuario jugo:</p></div>
+        <div class="chi"><p id="2">La compu jugo:</p></div>
+        <div class="chi"><p id="compu">Gana la Compu:</p></div>
+        <div class="chi"><p id="empate">Empate:</p></div>
+        <div class="chi"><p id="usuario">Gana el Usuario:</p></div>
+    </section>
+
+    <footer class="footer">
+        <p id="fin"></p>
+        <script src="/script.js"></script>
+    </footer>
+</body>
+</html>
